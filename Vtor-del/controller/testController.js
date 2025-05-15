@@ -12,7 +12,7 @@ exports.test = async (req, res) => {
 }
 
 exports.getAll = async(req, res) => {
-    try{    
+    try{
         const courses = await Course.find();
         res.status(200).render(`courses`, {
             data: courses,
