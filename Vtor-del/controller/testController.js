@@ -2,7 +2,7 @@ const Course = require("../model/course")
 exports.test = async (req, res) => {
     try{
         res.status(200).render(`test`, {
-            data: `Test`
+            data: `Тест за backend развој на софтвер`
         })
     }catch(err){
         res.status(500).render(`test`, {
